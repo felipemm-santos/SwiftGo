@@ -1,0 +1,15 @@
+/* estilos simples para a tela de login */
+.forgot-link {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* impedir click/pointer nas imagens decorativas */
+.no-pointer {
+    pointer-events: none;
+}
+
+img[draggable="false"] {
+    user-select: none;
+    -webkit-user-drag: none;
+}

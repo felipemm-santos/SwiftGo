@@ -1,0 +1,14 @@
+.progress-markers {
+  position: absolute;
+  top: 20px; /* afasta abaixo da barra */
+  width: 100%;
+}
+
+.progress-markers span {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
