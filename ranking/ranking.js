@@ -15,7 +15,12 @@ document.querySelectorAll('.ranking-item').forEach(function (item, index) {
 });
 
 window.addEventListener('load', function () {
-    document.querySelector('.header').style.animation = 'slideIn 0.8s ease-out';
-    document.querySelector('.ranking-list').style.animation = 'slideIn 1s ease-out';
-    document.querySelector('.navigation').style.animation = 'slideIn 1.2s ease-out';
+    var header = document.querySelector('.header');
+    if (header) header.style.animation = 'slideIn 0.8s ease-out';
+
+    var rankingList = document.querySelector('.ranking-list');
+    if (rankingList) rankingList.style.animation = 'slideIn 1s ease-out';
+
+    var navigation = document.querySelector('.navigation');
+    if (navigation) navigation.style.animation = 'slideIn 1.2s ease-out';
 });
