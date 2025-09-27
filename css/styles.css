@@ -163,3 +163,98 @@ img.img-icon {
   height: 50px;
   margin-right: 10px;
 }
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width: 768px) {
+  .navbar>.container {
+    flex-direction: row-reverse !important;
+  }
+
+  /* Garante que o botão fique à direita e o avatar à esquerda só no mobile */
+  .container,
+  .container-fluid {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+
+  .navigation {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100vw;
+    min-width: 100vw;
+    padding: 0 0 10px 0;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+    font-size: 1rem;
+    gap: 4px;
+  }
+
+  .header {
+    padding: 12px 8px;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.9rem;
+  }
+
+  footer .text-center {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+
+  main.container-fluid.p-4 {
+    padding: 8px 0 !important;
+  }
+
+  .sidebar {
+    padding: 0 !important;
+  }
+
+  .offcanvas-body.navigation {
+    padding: 0 0 10px 0 !important;
+  }
+
+  .offcanvas.offcanvas-end {
+    width: 1px !important;
+    max-width: 1px !important;
+    min-width: 0 !important;
+    border-radius: 16px 0 0 16px;
+    right: 0;
+    left: auto;
+    overflow: hidden;
+  }
+
+  .offcanvas-body.navigation,
+  .offcanvas-body {
+    padding: 0 !important;
+  }
+
+  .offcanvas-body .container-fluid,
+  .offcanvas-body ul,
+  .offcanvas-body .nav-item {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-avatar-desktop {
+    display: none !important;
+  }
+}
