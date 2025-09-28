@@ -1,13 +1,29 @@
-.progress-markers {
-  position: absolute;
-  top: 20px; /* afasta abaixo da barra */
+/* Container principal do componente de progresso */
+.progress-component {
   width: 100%;
 }
 
-.progress-markers span {
-  position: absolute;
-  transform: translateX(-50%);
-  font-size: 0.8rem;
+/* Estiliza cada marcador de nível (ícone + texto) */
+.level-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; 
+  opacity: 0.7; 
+  transition: all 0.3s ease;
+}
+
+/* Estilo para o nível ATIVO */
+.level-marker.active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Alinha os marcadores de pontos */
+.points-marker {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
 }
