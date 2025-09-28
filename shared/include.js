@@ -1,13 +1,26 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-    var includeTargets = document.querySelectorAll('[data-include]');
+    const includeTargets = document.querySelectorAll('[data-include]');
+    const promises = []; 
+
     includeTargets.forEach(function (el) {
-        var path = el.getAttribute('data-include');
+        const path = el.getAttribute('data-include');
         if (!path) return;
-        fetch(path)
-            .then(function (r) { return r.text(); })
-            .then(function (html) { el.innerHTML = html; })
-            .catch(function () { /* falha silenciosa */ });
+
+        const promise = fetch(path)
+            .then(response => response.text())
+            .then(html => {
+                el.innerHTML = html;
+            })
+            .catch(err => {
+                console.error('Failed to include file:', path, err);
+            });
+
+        promises.push(promise);
+    });
+
+    
+    Promise.all(promises).then(() => {
+        window.dispatchEvent(new Event('includesLoaded'));
     });
 });
-
-

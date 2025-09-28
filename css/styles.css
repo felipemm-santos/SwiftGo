@@ -98,13 +98,8 @@ textarea:focus-visible {
 }
 
 .nav-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: currentColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1; 
 }
 
 .nav-text {
@@ -254,4 +249,11 @@ img.img-icon {
   .navbar-avatar-desktop {
     display: none !important;
   }
+}
+
+
+.nav-item.active {
+  background: #e55125;
+  color: white;
+  box-shadow: 0 4px 15px rgba(229, 81, 37, 0.4);
 }
