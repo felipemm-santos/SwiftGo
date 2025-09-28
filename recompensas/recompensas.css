@@ -1,9 +1,9 @@
-/* Container principal do componente de progresso */
+
 .progress-component {
   width: 100%;
 }
 
-/* Estiliza cada marcador de nível (ícone + texto) */
+
 .level-marker {
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   transform: scale(1.1);
 }
 
-/* Alinha os marcadores de pontos */
+
 .points-marker {
   flex: 1;
   text-align: center;
@@ -28,3 +28,20 @@
   color: #333;
 }
 
+/*aplicado em telas com largura de até 770px. */
+@media (max-width: 770px) {
+  .level-marker .img-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  .level-marker p {
+    font-size: 0.75rem;
+  }
+
+  
+  .points-marker {
+    font-size: 0.75rem;
+  }
+}
