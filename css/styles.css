@@ -259,7 +259,6 @@ img.img-icon {
   box-shadow: 0 4px 15px rgba(229, 81, 37, 0.4);
 }
 
-
 .card {
   border: none; 
   border-radius: 16px; 
@@ -270,4 +269,31 @@ img.img-icon {
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.progress {
+  height: 1.25rem; 
+  border-radius: 50px; 
+  background-color: #e9ecef; 
+}
+
+.progress-bar {
+  background-color: #2eff88 !important; 
+  border-radius: 50px;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.d-flex {
+  flex: 1;
 }
