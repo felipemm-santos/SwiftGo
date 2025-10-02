@@ -23,7 +23,8 @@ img[draggable="false"] {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+   background-color: #f8fafc;
+  background-image: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
   min-height: 100vh;
   color: #1e293b;
 }
@@ -63,7 +64,7 @@ body {
   box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
 }
 
-/* Hover scale global para botoes bootstrap */
+
 .btn,
 .btn-primary,
 .btn-secondary,
@@ -87,7 +88,7 @@ body {
   transform: translateY(0) scale(0.99);
 }
 
-/* Foco visivel e contraste melhorado */
+
 .btn:focus-visible,
 a:focus-visible,
 input:focus-visible,
@@ -256,4 +257,43 @@ img.img-icon {
   background: #e55125;
   color: white;
   box-shadow: 0 4px 15px rgba(229, 81, 37, 0.4);
+}
+
+.card {
+  border: none; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.progress {
+  height: 1.25rem; 
+  border-radius: 50px; 
+  background-color: #e9ecef; 
+}
+
+.progress-bar {
+  background-color: #2eff88 !important; 
+  border-radius: 50px;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container.d-flex {
+  flex: 1;
 }
