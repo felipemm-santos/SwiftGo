@@ -4,7 +4,7 @@
     background: white;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 30px;
 }
 
@@ -23,8 +23,8 @@
 }
 
 .ranking-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
     border-color: #e2e8f0;
 }
 
@@ -36,16 +36,19 @@
 .ranking-item.gold {
     background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
     border-color: #f59e0b;
+    box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);
 }
 
 .ranking-item.silver {
     background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
     border-color: #64748b;
+    box-shadow: 0 4px 16px rgba(100, 116, 139, 0.15);
 }
 
 .ranking-item.bronze {
     background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
     border-color: #ea580c;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.2);
 }
 
 .position-badge {
