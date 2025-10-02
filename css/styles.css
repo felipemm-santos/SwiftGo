@@ -64,7 +64,7 @@ body {
   box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
 }
 
-/* Hover scale global para botoes bootstrap */
+
 .btn,
 .btn-primary,
 .btn-secondary,
@@ -88,7 +88,7 @@ body {
   transform: translateY(0) scale(0.99);
 }
 
-/* Foco visivel e contraste melhorado */
+
 .btn:focus-visible,
 a:focus-visible,
 input:focus-visible,
