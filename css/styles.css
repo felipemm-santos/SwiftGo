@@ -8,8 +8,7 @@
 
 header,
 footer {
-  background: linear-gradient(135deg, #e55125 0%, #c94318 100%);
-  box-shadow: 0 2px 12px rgba(229, 81, 37, 0.15);
+  background-color: #e55125;
 }
 
 /* utilitario global para elementos decorativos nao clicaveis */
@@ -24,7 +23,7 @@ img[draggable="false"] {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background-color: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   min-height: 100vh;
   color: #1e293b;
 }
@@ -32,7 +31,7 @@ body {
 .navigation {
   background: white;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -56,13 +55,12 @@ body {
   background: #f1f5f9;
   color: #1e293b;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .nav-item.active {
-  background: linear-gradient(135deg, #e55125 0%, #c94318 100%);
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(229, 81, 37, 0.35);
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
 }
 
 /* Hover scale global para botoes bootstrap */
@@ -70,7 +68,7 @@ body {
 .btn-primary,
 .btn-secondary,
 .btn-outline-secondary {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   will-change: transform;
 }
 
@@ -78,37 +76,15 @@ body {
 .btn-primary:hover,
 .btn-secondary:hover,
 .btn-outline-secondary:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .btn:active,
 .btn-primary:active,
 .btn-secondary:active,
 .btn-outline-secondary:active {
-  transform: translateY(0) scale(0.98);
-}
-
-.card {
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.progress {
-  border-radius: 10px;
-  background-color: #e2e8f0;
-  height: 12px;
-}
-
-.progress-bar {
-  background: linear-gradient(90deg, #e55125 0%, #c94318 100%);
-  border-radius: 10px;
-  transition: width 0.6s ease;
+  transform: translateY(0) scale(0.99);
 }
 
 /* Foco visivel e contraste melhorado */
@@ -132,12 +108,12 @@ textarea:focus-visible {
 }
 
 .header {
-  background: linear-gradient(135deg, #e55125 0%, #c94318 100%);
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: white;
   padding: 30px;
   border-radius: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 8px 24px rgba(229, 81, 37, 0.25);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -277,7 +253,7 @@ img.img-icon {
 
 
 .nav-item.active {
-  background: linear-gradient(135deg, #e55125 0%, #c94318 100%);
+  background: #e55125;
   color: white;
-  box-shadow: 0 4px 15px rgba(229, 81, 37, 0.35);
+  box-shadow: 0 4px 15px rgba(229, 81, 37, 0.4);
 }
